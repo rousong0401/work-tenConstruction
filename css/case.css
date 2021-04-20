@@ -1,0 +1,271 @@
+#main {
+    padding-bottom: 100px;
+}
+
+#main .img {
+    width: 100%;
+    height: 450px;
+    background: url('../img/house.png') no-repeat center ;
+    background-size: cover;
+}
+
+.contentWp {
+    width: 100%;
+}
+
+.content {
+    max-width: 1280px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.contentWp:nth-child(odd) {
+    background-color:#0c0c0ce0;
+}
+
+.contentWp:nth-child(odd) .row:last-child,
+.contentWp:nth-child(even) .row:last-child {
+    border-bottom: none;
+}
+
+.content .left {
+    font-family: 'Noto Sans TC';
+    font-size: 3rem;
+    font-weight: 100;
+    color: #B99520;
+    width: 70px;
+    padding-top: 18px;
+}
+
+.content .right {
+    width: 97%;
+    margin-left: 57px;
+    position: relative;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 32px 0;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.row img {
+    height: 284px;
+    object-fit: contain;
+    width: 284px;
+}
+
+.row .right table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+.row .right table tr {
+    padding: 2px 0;
+}
+
+.row .right table th {
+    font-family: 'Noto Sans TC';
+    font-weight: bold;
+    font-size: 1rem;
+    color:#fff;
+    border-right: 1px solid #D6D6D6;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 10px 15px 1px 0;
+    width: 15%;
+    text-align: left;
+}
+
+.row .right table td {
+    color:#D6D6D6;
+    font-size: 1rem;
+    padding: 10px 0 1px 15px;
+    width: 85%;
+}
+div.title{background:#0c0c0ce0;}
+p.title {
+    font-family: 'Noto Sans TC';
+    color:#F3C000;
+    height: 56px;
+    line-height: 56px;
+    width: 163px;
+    font-size: 2.375rem;
+}
+
+.visit {
+    border: 1px solid #D6D6D6;
+    width: 110px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    left: 79%;
+    bottom: 0;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.visit:hover{background: #F3C000;border: 1px solid #F3C000;}
+.visit a {color: #D6D6D6;}
+
+@media(max-width:1650px) {
+    .content {width: 64%;}
+}
+
+@media(max-width:1550px) {
+    .content {width: 70%;}
+}
+
+@media(max-width:1450px) {
+    .content {width: 80%;}
+    #main .img {height: 350px;}
+}
+@media(max-width:1250px) {
+    .content {width: 85%;}
+}
+@media(max-width:1150px) {
+    div.title {padding: 50px 0;}
+    .content,
+    .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content .left {width: auto;}
+    .content .right {margin-left: 0;}
+    .row img {width: 80%;height: auto;}
+
+    p.title {
+        text-align: center;
+        margin: 30px auto;
+        font-size: 2.8rem;
+        width: 204px;
+        padding-bottom:5px ;
+        border-bottom: 5px solid #F2D655;
+        color: #fff;
+    }
+
+    .row .right table {width: 100%;}
+
+    .row .right table th {
+        font-size: 1.8rem;
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        width: 30%;
+        line-height: 2rem;
+        text-align: right;
+    }
+    .row .right table td,.visit a{
+        font-size: 1.8rem;
+        font-family: 'Noto Sans TC';
+        font-weight: 100;
+    }
+    .visit {
+        left: 0;
+        margin: 50px auto 70px;
+        width: 165px;
+        height: 52px;
+        line-height: 52px;
+    }
+
+    #main .img {
+        background: url(../img/house.png) no-repeat center;
+        background-size: cover;
+    }
+}
+@media (max-width: 900px){
+#main .img {
+    height: 243px;
+    background-color:#0c0c0ce0;
+    background: url(../img/house.png) no-repeat center;
+    background-size: contain;
+}
+div.title {padding: 50px 0 26px;}
+}
+@media(max-width:800px) {
+    #main .img {height:225px;}
+    .content .left,p.title{font-size:2.3rem;}
+    div.title h2{margin-bottom: 10px;font-size: 3.8rem;}
+    p.title{width: 168px;}
+    .row{border-bottom:0;}
+    div.title {padding: 40px 0 26px;}
+}
+@media(max-width:750px) {
+    #main .img {height: 196px;background-size: cover;}
+}
+@media(max-width:700px) {
+    div.title {
+        padding: 30px 0 26px;
+    }
+    .content .left{padding-top: 0;}
+    div.title h2{font-size: 3.5rem;}
+    .content .left, p.title {font-size: 2.1rem;}
+    .row .right table th,
+    .row .right table td,
+    .visit a,
+    div.title h3,
+    .row .right table th,
+    .row .right table td{font-size: 1.5rem;}
+}
+@media(max-width:600px) {
+    div.title {
+        padding: 20px 0 26px;
+    }
+    #main .img{height:150px;}
+    .content .right {width: 90%;}  
+    div.title h2{font-size: 3.2rem;}
+    .content .left, p.title {font-size: 1.8rem;}
+    .row .right table th,
+    .row .right table td,
+    .visit a,
+    div.title h3,
+    .row .right table th,
+    .row .right table td{font-size: 1.2rem;}
+    .visit{width: 110px;height: 39px;line-height: 39px;margin: 50px auto 66px;}
+    .row{padding:32px 0 0;}
+}
+
+@media(max-width:555px) {
+    div.title {
+        padding: 16px 0 26px;
+    }
+    #main .img{height:150px;}
+    .content .right {width: 100%;}
+    div.title h2{font-size: 2.8rem;}
+    .content .right {width: 95%;}
+    .content .left, p.title {font-size: 1.5rem;}
+    p.title {width: 115px;padding-bottom:1px;}
+}
+
+@media(max-width:500px) {
+    .content {width: 90%;}
+    div.title h2{font-size: 2.5rem;}
+    .content .left, p.title {font-size: 1.25rem;}
+    .row .right table th,
+    .row .right table td,
+    .visit a,
+    div.title h3,
+    .row .right table th,
+    .row .right table td{font-size: 1rem;}
+}
+@media(max-width:450px){
+    #main .img {
+        height: 127px;
+        background: url(../img/house.png) no-repeat right center;
+        background-size: cover;
+    }
+}
+@media(max-width:414px) {
+    .content .right {width: 98%;}
+}
+
+@media(max-width:350px) {
+    .content {width: 95%;}
+}

@@ -1,0 +1,19 @@
+.flex.button{margin-top:70px;}
+.flex label{width: 100px;margin-right: 30px;}
+div.title h3 {
+    width: 345px;
+}
+@media (max-width: 500px){
+.flex {width: 95%;}
+}
+@media (max-width: 450px){
+    .flex {width: 98%;}
+    .flex label{margin-right:20px;font-size: 1.1rem;}
+    }
+@media (max-width: 400px){
+    .flex input{width:230px;}
+    .flex label{margin-left:-20px;margin-right:10px;font-size: 1rem;}
+    }
+@media (max-width: 375px){
+    .flex label{margin-left:-15px;margin-right:0px;}
+    }

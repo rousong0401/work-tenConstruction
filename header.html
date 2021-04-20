@@ -1,0 +1,134 @@
+<div class="top">
+    <a href="index.html" title="首頁"><h1 class="logo" title="十大建設"></h1></a>
+    <div id="Mnav">
+       <ul>
+           <li class="index"><a href="index.html" class="up">首頁</a></li>
+           <li><a href="javascript:;" class="one up">關於十大</a>
+                <ul class="Mnav2">
+                    <li><a href="brand.html">品牌故事</a></li>
+                    <li><a href="team.html" class="last">團隊介紹</a></li>
+                </ul>
+            </li>
+            <li><a href="case.html" class="up">公司個案</a></li>
+            <li><a href="javascript:;" class="one up">媒體新訊</a>
+                <ul class="Mnav2">
+                    <li><a href="news.html">相關新聞</a></li>
+                    <li><a href="video.html" class="last">影音專區</a></li>
+                </ul>
+            </li>
+            <li><a href="buliding.html" class="up">建築．服務特色</a></li>
+            <li><a href="reservation.html" class="up">建案進度</a></li>
+            <li><a href="javascript:;" class="one up">會員專區</a>
+                <ul class="Mnav2">
+                    <li><a href="login.html">會員資料</a></li>
+                    <li><a href="login.html" class="last">會員優惠</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" class="up">聯絡我們</a></li>
+       </ul>
+       <div class="icon">
+             <img src="img/icon/FB.svg" alt="">
+             <img src="img/icon/LINE.svg" alt="">
+         </div>
+    </div>
+    <nav id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </nav>
+    <div class="right">
+         <div id="navwp">
+           <ul>
+               <li class="index"><a href="index.html" class="up">首頁</a></li>
+               <li><a href="javascript:;" class="one up">關於十大</a>
+                   <ul class="nav2">
+                       <li><a href="brand.html">品牌故事</a></li>
+                       <li><a href="team.html" class="last" >團隊介紹</a></li>
+                   </ul>
+               </li>
+               <li><a href="case.html" class="up">公司個案</a></li>
+               <li><a href="javascript:;" class="one up">媒體新訊</a>
+                    <ul class="nav2">
+                        <li><a href="news.html">相關新聞</a></li>
+                        <li><a href="video.html" class="last">影音專區</a></li>
+                    </ul>
+                </li>
+               <li><a href="buliding.html" class="up">建築．服務特色</a></li>
+               <li><a href="reservation.html" class="up">建案進度</a></li>
+               <li><a href="javascript:;" class="one up">會員專區</a>
+                   <ul class="nav2">
+                       <li><a href="login.html">會員資料</a></li>
+                       <li><a href="login.html" class="last">會員優惠</a></li>
+                   </ul>
+               </li>
+               <li><a href="contact.html" class="up">聯絡我們</a></li>
+           </ul>
+         </div>
+         <div class="icon">
+             <img src="img/icon/FB.svg" alt="">
+             <img src="img/icon/LINE.svg" alt="">
+         </div>
+    </div>
+    <div class="bg"></div>
+</div>
+<script>
+/*header*/
+let pageNo = $('.pageNo').text();
+let childNo = $('.child').text();
+$('header .top #navwp ul li').eq(pageNo).addClass('current');
+$('header .top #navwp ul li.current .nav2 li').eq(childNo).addClass('now');
+
+
+/*menu收合*/
+var $W=$(window).width();
+var $H=$(window).height();
+$('.bg').width($W);
+$('.bg').height($H);
+$('.top #Mnav').width($W+15);
+$('.top #Mnav').height($H);
+   
+ $(document).ready(function(){
+    $(window).resize(function(){
+        var $W=$(window).width();
+        var $H=$(window).height();
+         $('.top #Mnav').hide();
+         $('.top #Mnav').height($H);
+         $('.top #Mnav').width($W+15);
+    });   
+});
+/*PC nav slider*/   
+if($('.top #navwp ul li.current .nav2').length > 0){
+    $('.top #navwp ul li.current .nav2').show();
+    $('.top #navwp ul li.current').addClass('margin');
+    /*hover*/
+    // $('.top #navwp ul li .nav2 li:before').css({'content':''});
+}    
+if($('.top #navwp ul li.current .nav2').length === 0){
+    $('.top #navwp ul li.current').css({'top':'-10px'});
+    $('.top #navwp ul li.current a').addClass('before');
+}
+$('.top #navwp ul li .one').click(function(){
+   $(this).parent('.top #navwp ul li').siblings().children('.nav2').find('a').removeClass("clicked");
+   $(this).siblings('.nav2').fadeIn(500);
+   $(this).parent('.top #navwp ul li').addClass('margin');
+   $(this).parent('.top #navwp ul li').siblings().removeClass('margin');
+   $(this).parent('.top #navwp ul li').siblings().children('.nav2').hide();
+}); 
+/*menu click*/
+$('header nav').click(function(){
+    $('header #Mnav').fadeToggle(800);
+    $('.top>a .logo').css({'z-index':6});
+    $("body").toggleClass('menuOpen');
+});
+/*menu slider*/ 
+$('.top #Mnav a').click(function(){
+    if($(this).hasClass('one')){
+        $('.top #Mnav').animate({scrollTop:0});
+        $(this).siblings('.Mnav2').slideToggle(function(){
+              $('.top #Mnav').css({'overflow-y':'scroll'});
+        });
+    }else{
+         $('#Mnav').toggle();
+    }
+});   
+</script>

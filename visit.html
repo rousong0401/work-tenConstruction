@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="DC.Title" content="十大建設" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/loading.js"></script>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/visit.css" type="text/css">
+    <title>預約賞屋</title>
+</head>
+<body>
+<header class="header"></header>
+<div id="main">
+   <div class="img"></div>
+   <div class="title">
+       <h2>預約賞屋</h2>
+       <h3>Reservation</h3>
+   </div>
+   <div class="wrap">
+       <form action="">
+       <div class="flex">
+           <div class="left flex">
+               <label for="name">＊姓名</label>
+               <input type="text" id="name" autocomplete="off" placeholder="請輸入姓名" required/>
+           </div>
+           <div class="right flex">
+               <label for="gender">＊性別</label>
+               <div class="flex input gender">
+                   <div class="flex gender">
+                       <input type="radio" name="gender" value="male" required>
+                       <label for="male">男</label>
+                   </div>
+                   <div class="flex gender">
+                       <input type="radio" name="gender" value="female">
+                       <label for="female">女</label>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="flex">
+           <div class="left flex">
+               <label for="phone">＊聯絡電話</label>
+               <input type="tel" id="phone" autocomplete="off" placeholder="請輸入姓名" required/>
+           </div>
+           <div class="right flex">
+               <label for="mail">＊Email</label>
+               <input type="email" id="mail" autocomplete="off" placeholder="請輸入Email" required/>
+           </div>
+       </div>
+       <div class="flex big address">
+           <label for="address">地址</label>
+           <input type="text" id="address" autocomplete="off" placeholder="請輸入地址"/>
+       </div>
+       <div class="flex big building">
+           <label for="building">＊預約建案</label>
+<!--           <input type="text" id="building" autocomplete="off" value="自動帶入前面按鈕建案" required />-->
+           <select>
+              <option value ="自動帶入前面按鈕建案">自動帶入前面按鈕建案</option>
+           </select>
+       </div>
+       <div class="flex big textarea">
+           <label for="content">＊內容</label>
+           <textarea cols="90" rows="10" id="content" autocomplete="off" placeholder="請輸入內容" required></textarea>
+       </div>
+       <img src="img/robot.png" alt="" class="robot">
+       <button type="submit" name="submit">確定送出</button>
+   </form> 
+   </div>
+   <img src="img/banner/BG.png" alt="" class="bgImg">
+   <div class="pageNo">4</div>
+</div>
+<footer></footer>   
+</body>
+</html>

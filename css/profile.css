@@ -1,0 +1,80 @@
+.flex label{width: 80px;margin-right: 32px;}
+.flex.big label{width: 89px;margin-right: 32px;}
+form>.flex:nth-child(2) {margin: 25px auto;}
+.flex{margin:0 auto;}
+.flex.button{margin-top: 100px;}
+form{padding-bottom: 109px;margin-bottom:0;}
+
+@media (max-width: 1100px){
+    form{width: 90%;}
+    .flex .left, .flex .right {width: 50%;}
+    .flex.big label {margin-right: 24px;}
+    .flex.big input {width: 87%;}
+}
+@media(max-width:1024px){
+    form>.flex:nth-child(1),
+    form>.flex:nth-child(2){flex-direction: column;}
+    .flex .left, 
+    .flex .right{width:100%;}
+    form>.flex:nth-child(1) label,
+    form>.flex:nth-child(2) label,
+    .flex.big label{width: 11.5%;margin-right: 1.5%;}
+    form>.flex:nth-child(1) input,
+    form>.flex:nth-child(2) input {width: 85.5%;}
+    form>.flex:nth-child(2) {margin: 0 auto;}
+    form>.flex:nth-child(1) .right,
+    form>.flex:nth-child(2) .right{margin: 25px auto;}
+    .flex.input.gender{width: 86%;}
+    .wrap{margin-bottom: 0;}
+    .flex.big input {width: 85%;}
+}
+@media(max-width:1000px){
+    #main .bgImg {height: 85vh;}
+    .flex.big input {width: 86%;}
+}
+@media(max-width:950px){
+    .flex.big input {width: 85.5%;}
+}
+@media(max-width:900px){
+    form{width:90%;}
+    #main .bgImg {height: 83vh;}
+}
+@media(max-width:800px){
+    #main .bgImg {height: 80vh;}
+    form>.flex label[for=phone]{width: 12%;}
+}
+@media(max-width:745px){
+    form {width: 95%;}
+    .flex label{font-size: 1.1rem;}
+    .flex.button{justify-content: center;}
+}
+@media(max-width:600px){
+    form>.flex:nth-child(1) label,
+    form>.flex:nth-child(2) label,
+    .flex label,.flex.big label{width: 18%;margin-right: 1.5%;}
+    form>.flex:nth-child(1) input,
+    form>.flex:nth-child(2) input,
+    .flex input,.flex.big input{width: 75.5%;}
+    #main .bgImg {
+        height: 77vh;
+    }
+}
+@media(max-width:500px){
+    form>.flex:nth-child(1) .right,
+    form>.flex:nth-child(2) .right{margin: 20px auto;}
+    #main .bgImg {
+        height: 74vh;
+    }
+}
+@media(max-width:414px){
+    form>.flex:nth-child(1) .right,
+    form>.flex:nth-child(2) .right{margin: 15px auto;}
+    }
+    @media(max-width:400px){
+        form>.flex:nth-child(1) label, form>.flex:nth-child(2) label, .flex label, .flex.big label{width: 23%;}
+        form>.flex:nth-child(1) input, form>.flex:nth-child(2) input, .flex input, .flex.big input {width: 69.5%;}
+        #main .bgImg {height: 71vh;}
+    }
+    @media(max-width:320px){
+        form>.flex:nth-child(1) label, form>.flex:nth-child(2) label, .flex label, .flex.big label{width: 24%;}
+    }

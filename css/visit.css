@@ -1,0 +1,144 @@
+#main .img {
+    width: 100%;
+    height: 450px;
+    background: url('../img/visit.png') no-repeat center ;
+    background-size: cover;
+}
+div.title h2{margin-bottom:6px;}
+div.title h3{width:309px;}
+.flex.big.textarea{align-items: baseline;margin-bottom:30px;}
+.flex.big.address,.flex.big.building{margin-bottom:30px;}
+@media(max-width:1300px){
+    form{margin-left:8%;}
+        form>.flex:nth-child(1),form>.flex:nth-child(2){flex-direction: column;margin: 0 auto;}
+        .flex .left, .flex .right{width:100%;margin-bottom:16px;}
+        .flex .left label,.flex .right label{width: 11.5%;margin-right: 1.5%;}
+        .flex{margin:1.5% auto;}
+        .flex .right input{margin-top: 1.5%;}
+        .flex .left input,.flex .right input{width: 85.5%;}
+        .flex.input.gender{margin-left:0;margin-top: 0;}
+        .flex.input div{margin:0 58px 0 0;}
+        .robot{margin-left: 28%;}
+    }
+    @media(max-width:1090px){
+        div.title h2{margin-bottom: 10px;font-size: 3.8rem;}
+        .flex.big input,textarea,.flex .left input,.flex .right input,select {width:80.5%;}
+        .flex.big label ,.flex .left label, .flex .right label{width: 15%;margin-right: 3%;}
+        div.title {padding: 90px 0 70px;}
+        #main .img{background: url(../img/visit.png) no-repeat 30% center;background-size: cover;}
+    }
+    @media(max-width:900px){
+        #main .img {height: 243px;}
+        div.title h2{font-size: 3.5rem;}
+        div.title {padding: 70px 0 50px;}
+    }
+    @media(max-width:800px){
+        .robot{margin-left: 25%;}
+        #main .img {height:225px;}
+        .flex{margin:2% auto;}
+        .flex .right input{margin-top:2%;}
+        .flex.big input,textarea,.flex .left input,.flex .right input,select {width:78.5%;}
+        .flex.big label ,.flex .left label, .flex .right label{width:18%;}
+        .flex label{font-size: 1.1rem;}
+        div.title h2{font-size: 3rem;}
+        div.title {padding: 50px 0;}
+    }
+    @media(max-width:750px) {
+        .robot{margin-left: 25%;}
+       form {width: 90%;margin-left: 1%;}
+        #main .img {height: 196px;background-size: cover;}
+        div.title h2{font-size: 2.5rem;}
+        div.title {padding: 40px 0 46px;}
+    }
+    @media(max-width:700px) {
+        .robot{margin-left: 22%;}
+    }
+    @media(max-width:669px){
+        div.title {
+            padding: 20px 0 46px;
+        }
+        .flex{margin:3% auto;}
+        .flex .right input{margin-top:3%;}
+        .flex.big input,textarea,.flex .left input,.flex .right input,select {width:74.5%;}
+        .flex.big label ,.flex .left label, .flex .right label{width:22%;}
+    }
+    @media(max-width:600px) {
+        .robot{margin-left: 19%;}
+        #main .img{height:150px;}
+        div.title {
+            padding: 16px 0 36px;
+        }
+    }
+    @media(max-width:555px){
+        .robot{margin-left: 16%;}
+        #main .img{height:150px;}
+        .flex{margin:4% auto;}
+        .flex .right input{margin-top:4%;}
+        form{width: 90%;}
+        .flex label{font-size: 1rem;}
+    }
+    @media(max-width:500px){
+        form {margin:0 auto 100px;}
+        .robot{margin:10px auto;width: 100%;}
+        .flex.big input,textarea,.flex .left input,.flex .right input,select {width:70.5%;}
+        .flex.big label ,.flex .left label, .flex .right label{width:26%;}
+        .flex.input.gender{padding-left:5px;}
+        .flex .flex.left input, .flex .flex.right input{width: 100%;}
+        .flex .flex.left label, .flex .flex.right label{width: 17%;}
+        .flex .flex.right label[for=gender]{width: 13%;}
+        .flex.big label, .flex .left label, .flex .right label{margin-right:10px;}
+        .flex {
+            margin-left: -15%;
+        }
+    }
+    @media(max-width:450px){
+        form {
+            width: 85%;
+        }
+        #main .img {
+            height: 127px;
+            background: url(../img/visit.png) no-repeat right center;
+            background-size: cover;
+        }
+        .flex .flex.right label[for=gender]{width: 14%;}
+        .flex .flex.right label[for=mail]{width: 19%;}
+    }
+    @media(max-width:414px){
+        .robot{height:90px;}
+        .flex .flex.left input, .flex .flex.right input {
+            width: 86%;
+        }
+        .flex .flex.right label[for=gender] {
+            width: 16%;
+        }
+        .flex .flex.right label[for=mail] {
+            width: 21%;
+        }
+    }
+    @media(max-width:400px){
+        .flex .flex.left label, .flex .flex.right label {
+            width: 20%;
+        }
+        .flex .flex.left input, .flex .flex.right input {
+            width: 86%;
+        }
+        .flex .flex.right label[for=gender] {
+            width: 18%;
+        }
+        .flex .flex.right label[for=mail] {
+            width: 22%;
+        }
+        .flex.big.address, .flex.big.building,.flex.big.textarea {
+            margin-left: -8%;
+        }
+    }
+    @media(max-width:350px){
+    .flex .flex.right label[for=mail] {
+        width: 23%;
+    }
+}
+@media(max-width:330px){
+    .flex .flex.right label[for=mail] {
+        width: 24%;
+    }
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="DC.Title" content="十大建設" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/loading.js"></script>
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/reservation.css" type="text/css">
+    <link rel="stylesheet" href="css/signUp.css" type="text/css">
+    <title>註冊會員</title>
+</head>
+<body>
+    <header class="header"></header>
+    <div id="main">
+       <div class="title">
+           <h2>註冊會員</h2>
+           <h3>Sign Up</h3>
+       </div>
+       <form action="" >
+           <div class="flex">
+               <label for="account">帳號</label>
+               <input type="text" id="account" placeholder="請輸入帳號" autocomplete="off" required />
+           </div>
+           <div class="flex">
+               <label for="password">密碼</label>
+               <input type="text" id="password" autocomplete="off" required placeholder="請輸入密碼"/>
+           </div>
+           <div class="flex">
+               <label for="passwordConfirm">確認密碼</label>
+               <input type="text" id="passwordConfirm" autocomplete="off" required placeholder="請再次輸入密碼" onChange="checkpas()"/>
+           </div>
+           <div class="flex">
+               <label for="name">姓名</label>
+               <input type="text" id="name" autocomplete="off" required placeholder="請輸入姓名"/>
+           </div>
+           <div class="flex gender">
+               <label for="gender">姓別</label>
+               <div class="flex input gender">
+                   <div class="flex gender">
+                       <input type="radio" name="gender" value="male" required>
+                       <label for="male">男</label>
+                   </div>
+                   <div class="flex gender">
+                       <input type="radio" name="gender" value="female">
+                       <label for="female">女</label>
+                   </div>
+               </div>
+           </div>
+           <div class="flex">
+               <label for="mail">Email</label>
+               <input type="email" id="mail" autocomplete="off" required placeholder="請輸入Email"/>
+           </div>
+           <div class="flex">
+               <label for="phone">聯絡電話</label>
+               <input type="tel" id="phone" autocomplete="off" required placeholder="請輸入手機"/>
+           </div>
+           <div class="flex">
+               <label for="address">地址</label>
+               <input type="text" id="address" autocomplete="off" required placeholder="請輸入地址"/>
+           </div>
+           <img src="img/robot.png" alt="" class="robot">
+           <button type="submit" name="submit">送出</button>
+       </form>
+       <img src="img/login.png" alt="" class="bgImg">
+       <div class="pageNo">10</div>
+    </div>
+    <footer></footer>
+<script>
+//     $('button').click(function(){
+//         if($("#account").val() === ""){
+//              $("#account").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入帳號");
+//        }else if($("#password").val() === ""){
+//              $("#password").focus().css("background-color","#FFFFCC").attr("placeholder","請輸入密碼");
+//        }else if($("#passwordConfirm").val() === ""){
+//              $("#passwordConfirm").focus().css("background-color","#FFFFCC").attr("placeholder", "請再次輸入密碼");
+//        }else if($("#name").val() === ""){
+//              $("#name").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入姓名");
+//        }else if($("#male").attr("checked",false) || $("#female").attr("checked",false)){
+////          }else if($("#gender").attr("checked",false)){
+//              $("#gender").focus().css("background-color","#FFFFCC");
+//        }else if($("#mail").val() === ""){
+//              $("#mail").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入Email");
+//        }else if($("#phone").val() === "" || $("#phone").val().length !== 10){
+//              $("#phone").focus().css("background-color","#FFFFCC").attr({
+//                  "placeholder": "請輸入手機",
+//                  'minlength':'10',
+//                  'maxlength':'10'
+//              });
+//        }else if($("#address").val() === ""){
+//              $("#address").focus().css("background-color","#FFFFCC").attr("placeholder", "請輸入地址");
+//        }else{
+//            self.location='login.html';
+//        }
+//    });
+</script>
+</body>
+</html>

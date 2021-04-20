@@ -1,0 +1,97 @@
+.flex{margin:21px auto;}
+.signUp{display:block;width: 150px;height: 45px;border: 1px solid #76BA15;background-color: #fff;color: #76BA15;margin: 30px auto;
+box-sizing: border-box;font-size: 14px;line-height: 45px;text-align:center;cursor:pointer;}
+.flex.button{width:500px;}
+.flex input{width: 707px;padding-left: 35px;font-size: 1.25rem;}
+.flex.input div{width: 100px;}
+.flex.input.gender{
+    margin: 0;
+    width: 707px;
+    justify-content: flex-start;}
+.flex label{text-align: center;}
+.robot{margin: 38px auto 40px;}
+form{margin-bottom: 83px;position: relative;z-index: 2;}
+#main .bgImg{
+    width: 100%;
+    object-fit: scale-down;
+    position: absolute;
+    z-index: 1;
+    height: 94vh;
+    object-position: bottom;
+}
+div.title{position: relative;z-index: 2;}
+.flex.input.gender .flex.gender input[type='radio']:after{width: 19px;height: 19px;top: 1px;
+    left: 0px;}
+    .flex.input.gender .flex.gender input[type='radio']:checked:before {
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #fff;content: '';
+    }
+    .flex.input.gender .flex.gender input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        top: -9px;
+        left: -1px;
+        position: relative;
+        background-color: #fff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 5px solid #444444CC;
+    }
+@media(max-width:1000px){
+  form{width: 90%;}
+  .flex label {width: 107px;}
+}
+@media(max-width:700px) {
+    #main .bgImg{height: 88vh;}
+    .flex {width: 100%;}
+    .flex label {width: 122px;}
+}
+@media(max-width:650px) {
+    .flex label {width: 150px;}
+}
+@media(max-width:600px) {
+    #main .bgImg{height: 87vh;}
+}
+@media (max-width: 555px){
+.flex label {
+    width: 173px;
+}
+#main .bgImg {
+    height: 85vh;
+}
+}
+@media (max-width: 550px){
+form {width:90%;}
+.flex label {width: 185px;font-size: 1.1rem;}
+#main .bgImg {
+    height: 83vh;
+}
+}
+@media (max-width: 414px){
+    form {width:97%;margin-bottom: 55px;}
+    .flex label{font-size: 1rem;width: 79px;}
+    .flex input ,.flex.input.gender{width: 250px;}
+}
+@media(max-width:400px) {
+    #main .bgImg {
+        height: 81vh;
+    }
+    .flex input ,.flex.input.gender{width: 225px;}
+    .flex{justify-content: flex-start;}
+}
+@media(max-width:375px) {
+    #main .bgImg {
+        height: 80vh;
+    }
+    .flex label {
+        width: 67px;
+    }
+}

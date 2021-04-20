@@ -1,0 +1,154 @@
+div.title h3 {
+    width: 200px;
+}
+.flex {
+    margin: 0 auto 20px;
+}
+
+.flex.login {
+    align-items: center;
+    width: 515px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.flex.login .flex{margin-bottom:0 ;}
+.flex label{font-size: 1.25rem;text-align: center;width: 40px;
+    margin-right: 60px;}
+.flex.login label {
+    width: 130px;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.robot {
+    height: 105px;
+    object-fit: contain;
+    display: block;
+    margin: 45px auto 40px;
+}
+
+.img-fluid.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.login a {
+    color:#fff;
+    display: block;
+    margin: 1% auto;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #fff;
+}
+
+.signUp {
+    display: block;
+    width: 111px;
+    height: 39px;
+    border: 1px solid #fff;
+    background-color: #444444CC;
+    color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 39px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.flex.button {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+form{padding-bottom: 100px;position: relative;z-index:2;}
+div.title{position: relative;z-index:2;}
+#main{background-color:#262626;}
+
+
+    #main .bgImg{
+        width: 100%;
+    object-fit: scale-down;
+    position: absolute;
+    z-index: 1;
+    height: 94vh;object-position: bottom;
+    }
+@media(max-width:1100px){
+    #main .bgImg{height: 80vh;}
+}
+@media(max-width:1000px){
+    #main .bgImg{height: 77vh;}
+}
+@media(max-width:900px){
+    #main .bgImg{height: 74vh;}
+}
+@media(max-width:700px) {
+    #main .bgImg{height: 71vh;}
+    form {width: 85%;}
+    .flex.login {
+        width: 100%;
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex.login .flex {
+        width: 222px;
+        margin: 0;
+    }
+    .flex.login a {
+        margin: 0 0 0 20px;
+    }
+    button,
+    .signUp {
+        margin:0 32px;
+    }
+}
+@media(max-width:600px) {
+    #main .bgImg{height: 69vh;}
+}
+@media(max-width:550px) {
+    form {
+        width: 90%;
+    }
+
+    .flex label {
+        width: 50px;
+        margin-right: 26px;
+    }
+    div.title {
+        padding: 60px 0;
+    }
+
+    .robot {
+        height: 90px;
+    }
+}
+
+@media(max-width:414px) {
+    div.title {
+        padding: 50px 0 60px;
+    }
+    form {
+        width: 100%;
+    }
+    button{background: #F3C0004D;border: 1px solid #F3C000;}
+}
+@media(max-width:400px) {
+    #main .bgImg {
+        height: 67vh;
+    }
+    div.title {
+        padding: 40px 0 60px;
+    }
+}
+@media(max-width:375px) {
+    #main .bgImg {
+        height: 65vh;
+    }
+    div.title {
+        padding: 31px 0 60px;
+    }
+    .flex.login .flex {
+        width: 204px;
+    }
+}

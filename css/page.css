@@ -1,0 +1,76 @@
+.ui-pagination-container {
+	height: 34px;
+	line-height: 34px;
+}
+
+.ui-pagination-container .ui-pagination-page-item {
+	font-size: 1.1rem;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+	background-color:transparent;
+	border:0;
+	color: #fff;
+	margin: 0 3px;
+	text-decoration: none;border-radius:50%;
+}
+
+.ui-pagination-container .ui-pagination-page-item[data-current="homePage"],
+.ui-pagination-container .ui-pagination-page-item[data-current="endPage"]{
+    display:none;
+}
+
+.ui-pagination-container .ui-pagination-page-item.prevPage,
+.ui-pagination-container .ui-pagination-page-item.nextPage{
+    color:#F3C000;font-weight:100;font-size:1.25rem;font-family: 'Noto Sans TC';
+}
+
+.ui-pagination-container .ui-pagination-page-item:hover {
+	border-color: #568dbd;
+	color: #568dbd;
+	text-decoration: none;
+}
+
+.ui-pagination-container .ui-pagination-page-item.active {
+    background: #F3C000;border-color:#76BA15;color: #fff;cursor: pointer;border-radius:50%;
+    border:1px solid #F3C000;
+}
+button {
+    display: inline-block;
+    padding: 6px 12px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    border-color: #28a4c9;
+    color: #fff;
+    background-color: #5bc0de;
+    margin: 20px 20px 0 0;
+}
+
+.box {
+    margin: 0px auto 140px;
+    height: 53px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid #FFF;
+    width: 368px;
+    border-radius: 27px;
+    background: #515151;
+}
+
+.page {
+    width:auto;
+}
+
+.info {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+}

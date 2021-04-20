@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="DC.Title" content="十大建設" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/reservation.css" type="text/css">
+    <title>建案進度</title>
+</head>
+<body>
+    <header class="header"></header>
+    <div id="main">
+           <div class="img"></div>
+           <div class="title">
+               <h2>訂戶登入</h2>
+               <h3>Subscriber Log In</h3>
+           </div>
+           <form method="post" >
+               <div class="flex">
+                   <label for="bulidingName">建案選擇</label>
+                   <select id="bulidingName" aria-placeholder="請選擇建案" required>
+                      <option value="">請選擇建案</option>
+                      <option value="A">建案A</option>
+                      <option value="B">建案B</option>
+                   </select>
+               </div>
+               <div class="flex">
+                   <label for="password">密碼</label>
+                   <input type="text" id="password" autocomplete="off" required/>
+               </div>
+               <div class="flex login">
+                   <input type="radio" name="keepLogin" value="keepLogin">
+                   <label for="keepLogin">保持登入狀態</label>
+               </div>
+               <img src="img/robot.png" alt="" class="robot">
+               <button type="submit" name="submit" class="submit">登入</button>
+           </form>
+           <img src="img/banner/BG.png" alt="" class="bgImg">
+           <div class="pageNo">9</div>
+    </div>
+    <footer></footer>
+<script>
+    $('.submit').click(function(){
+        if($('#password').val() === ''){
+            $("#password").focus().css({"background-color":"#F3C000",'color':'#fff'}).attr("placeholder", "請輸入密碼");
+        }else{
+            self.location='schedule.html';
+        }
+    });
+
+</script>
+</body>
+</html>

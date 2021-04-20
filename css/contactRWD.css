@@ -1,0 +1,72 @@
+form>.flex:nth-child(2) {
+    margin: 20px auto;
+}
+form>.flex:nth-child(1) label, form>.flex:nth-child(2) label{text-align: center;}
+.flex.big{align-items: center;}
+.flex.big:nth-child(5) {
+    align-items: flex-start;
+}
+div.title h3{width: 185px;}
+@media(max-width:1024px){
+    form>.flex:nth-child(1),form>.flex:nth-child(2){flex-direction: column;}
+    .flex .left, .flex .right{width:100%;}
+    form>.flex:nth-child(1) label,form>.flex:nth-child(2) label{width: 11.5%;margin-right: 1.5%;}
+    form>.flex:nth-child(1) input,form>.flex:nth-child(2) input {width: 85.5%;}
+    form>.flex:nth-child(1),form>.flex:nth-child(2) ,.flex.input.gender{margin: 0 auto;}
+    form>.flex:nth-child(1) .right,form>.flex:nth-child(2) .right{margin:15px auto;}
+    .flex label,form>.flex:nth-child(1) input, form>.flex:nth-child(2) input,
+    textarea, select, .flex.big input{font-size: 1.1rem;}
+    .flex.input.gender .flex.gender input[type='radio']:after {width: 17px;height: 17px;top: -2px;}
+    .flex.input.gender .flex.gender input{ width: 17px;height: 17px;}
+}
+@media(max-width:900px){
+form{width:95%;}
+}
+@media(max-width:850px){
+    form>.flex:nth-child(1) input, form>.flex:nth-child(2) input,select,textarea,.flex.big input,.flex.input.gender{width: 70%;}
+    .flex.big,.flex{justify-content:center;}   
+    .flex.input.gender{margin-left: 0;justify-content: flex-start;}
+    form>.flex:nth-child(1) .right{width: 87%;justify-content: flex-start;}
+    form>.flex:nth-child(1) label, form>.flex:nth-child(2) label,.flex.big label {width:89px;}
+    form>.flex:nth-child(1) .right label{width: 109px;}
+}
+@media(max-width:700px){
+    form>.flex:nth-child(1) .right {width: 91%;} 
+    form>.flex:nth-child(1) .right label {width: 129px;}
+}
+@media(max-width:650px){
+    form>.flex:nth-child(1) .right label {width: 116px;}
+    .flex.input.gender {margin-left: 0;margin-right: 0;}
+}
+@media(max-width:600px){
+    form>.flex:nth-child(1) .right {width: 100%;} 
+    form>.flex:nth-child(1) label, form>.flex:nth-child(2) label,.flex.big label ,.flex label{width:109px;}
+    form>.flex:nth-child(1) input,form>.flex:nth-child(2) input,.flex input,.flex.big input,select,textarea{width: 75.5%;}
+}    
+    
+@media(max-width:500px){
+    form {width: 95%;margin-bottom: 51px;}
+    .robot{height:90px;}
+    form>.flex:nth-child(1) .right label{padding-right: 0;}
+    form>.flex:nth-child(1) .right {margin-left: -6px;}
+}
+@media(max-width:414px){
+    form>.flex:nth-child(1) label, form>.flex:nth-child(2) label, .flex.big label, .flex label{font-size: 1rem;}
+}
+@media(max-width:400px){
+    form{width: 100%;}
+    form>.flex:nth-child(1) input, form>.flex:nth-child(2) input, .flex input, .flex.big input, select, textarea {width: 64%;}
+    form>.flex:nth-child(1), form>.flex:nth-child(2), .flex.input.gender, .flex.big{margin-left: -24px;}
+    form>.flex:nth-child(1) .right{margin-left: 14px;}
+    .flex.input.gender{margin-left: -1px;}
+}
+@media(max-width:375px){
+form>.flex:nth-child(1) .right{margin-left: 14px;}
+textarea{height: 131px;}
+}
+@media(max-width:350px){
+form>.flex:nth-child(1) label, form>.flex:nth-child(2) label, .flex.big label, .flex label{width: 90px;}
+}
+@media (max-width: 320px){
+form>.flex:nth-child(1) .right {margin-left: 3px;}
+}
